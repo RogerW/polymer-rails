@@ -9,7 +9,6 @@ module Polymer
       XML_OPTIONS = { save_with: Nokogiri::XML::Node::SaveOptions::NO_EMPTY_TAGS }
 
       def initialize(data)
-        warn "Start\n\n-------------------------------------\n\n #{data}\n\n-------------------------------------\n\n End"
         @doc = ::Nokogiri::HTML5("<body>#{data}</body>")
       end
 
