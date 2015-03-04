@@ -7,6 +7,7 @@ module Polymer
       def initialize(context, data)
         @context = context
         @component = Component.new(data)
+        warn "ComponentsProcessor initialized"
       end
 
       def process
