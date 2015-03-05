@@ -5,7 +5,6 @@ module Polymer
     class ComponentsProcessor < Sprockets::Processor
 
       def initialize(context, data)
-        warn "Context\n-----------------------\n#{context}\n-----------------------\nData\n-----------------------\n#{data}\n-----------------------\n"
         @context = context
         @component = Component.new(data)
       end
